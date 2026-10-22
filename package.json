@@ -1,0 +1,16 @@
+{
+  "name": "codex-wallpaper-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Wallpaper Engine media and translucent surfaces for Codex on Windows.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:core": "node --test test/backend-manager.test.mjs test/installation.test.mjs",
+    "verify": "node --check src/codex-skin.mjs && node --check src/manager-renderer.mjs && node --check scripts/wallpaper-service.mjs && node --check scripts/mcp-server.mjs && npm test",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "devDependencies": { "playwright": "^1.56.0", "smol-toml": "^1.3.1" }
+}

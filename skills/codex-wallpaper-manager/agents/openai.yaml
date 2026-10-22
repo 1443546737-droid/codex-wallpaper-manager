@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Wallpaper Manager"
+  short_description: "Manage local wallpaper and translucent Codex panels"
+  default_prompt: "Use $codex-wallpaper-manager to install or adjust my Codex wallpaper."
